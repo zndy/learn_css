@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .test1 {
+            height: 100px;
+            width: 100px;
+            background: red;
+            left: 200px;
+            top: 200px;
+            position: relative;
+        }
+
+        .test2 {
+            height: 100px;
+            width: 100px;
+            background: green;
+            left: 200px;
+            top: 200px;
+            position: relative;
+        }
+
+        .test3 {
+            height: 100px;
+            width: 100px;
+            background: blue;
+        }
+
+        .comment {
+            position: relative;
+            width: 400px;
+            border: solid 1px;
+            margin: 10px;
+            padding: 20px;
+            top: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test1"></div>
+    <div class="test2"></div>
+    <div class="test3"></div>
+    <div class="comment">
+        <p>comment:</p>
+        <p>relative: 一直以该在行（标准流）的左上角为原点</P>
+        <p>x: 向右移动x</p>
+        <p> right x: 向左移动x</p>
+        <p> top x: 向下移动x</p>
+        <p> bottom x: 向上移动x </p>
+    </div>
+</body>
+
+</html>
+
+<!-- relative: 一直以该在行（标准流）的左上角为原点
+        left x:    向右移动x
+        right x:   向左移动x
+        top x:     向下移动x
+        bottom x:  向上移动x -->
