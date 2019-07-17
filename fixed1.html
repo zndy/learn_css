@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=,, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+
+        .parentBox {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background: red;
+        }
+
+        .fix1 {
+            position: fixed;
+            right: 100px;
+            bottom: 100px;
+            width: 100px;
+            height: 100px;
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parentBox">
+        parentBox
+        <div class="fix1">fix1</div>
+    </div>
+    <div class="comment">
+        fixed div在窗口上的位置不会改变，即使向下滚动页面<br>
+        fixed position的left, right, top, bottom 和absolute position一样<br>
+        不同点在于fixed position不受父级元素的限制。 <br>
+    </div>
+</body>
+
+</html>
