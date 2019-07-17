@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+
+    .absolute1 {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: red;
+    }
+
+    .absolute2 {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: green;
+        left: 150px;
+        top: 150px;
+    }
+
+    .standard1 {
+        width: 300px;
+        height: 300px;
+        background: blue;
+    }
+
+    .standard1 .desc {
+        float: right;
+    }
+</style>
+
+<body>
+    <div class="absolute1">absolute1</div>
+    <div class="absolute2">absolute2</div>
+    <div class="standard1">
+        <span class="desc">standard1</span>
+    </div>
+    <div class="comment">
+        absolute: element脱离了文档流，所以html body的高度保持不变，<br>
+        如果body里只有这一个元素的话html body的高度为0，相当于在body内并不存在这个元素 <br>
+        left x: 以窗口左边为基准，向右移动x<br>
+        right x: 以窗口右边为基准，向左移动x<br>
+        top x: 以窗口上边为基准，向下移动x<br>
+        bottom x: 以窗口下边为基准，向上移动x<br>
+    </div>
+</body>
+
+</html>

@@ -10,9 +10,10 @@
         * {
             margin: 0;
             padding: 0;
+            color: white;
         }
 
-        .test1 {
+        .relative1 {
             height: 100px;
             width: 100px;
             background: red;
@@ -21,7 +22,7 @@
             position: relative;
         }
 
-        .test2 {
+        .relative2 {
             height: 100px;
             width: 100px;
             background: green;
@@ -30,7 +31,7 @@
             position: relative;
         }
 
-        .test3 {
+        .standard1 {
             height: 100px;
             width: 100px;
             background: blue;
@@ -48,16 +49,17 @@
 </head>
 
 <body>
-    <div class="test1"></div>
-    <div class="test2"></div>
-    <div class="test3"></div>
+    <div class="relative1">relative1</div>
+    <div class="relative2">relative2</div>
+    <div class="standard1">standard1</div>
     <div class="comment">
         <p>comment:</p>
-        <p>relative: 一直以该在行（标准流）的左上角为原点</P>
-        <p>x: 向右移动x</p>
-        <p> right x: 向左移动x</p>
-        <p> top x: 向下移动x</p>
-        <p> bottom x: 向上移动x </p>
+        <p>relative: 一直以"元素该在的行"（标准流）的左上角为原点</P>
+        <p>如果body内只有这一个元素，不管这个元素被放在哪里，body的高度都是这个元素的本身高度</p>
+        <p>left x: 向右移动x</p>
+        <p>right x: 向左移动x</p>
+        <p>top x: 向下移动x</p>
+        <p>bottom x: 向上移动x </p>
     </div>
 </body>
 
