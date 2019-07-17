@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: outside none none;
+        }
+
+        .page {
+            width: 100%;
+            height: 3000px;
+            background: #CCC;
+        }
+
+        .page .title {
+            text-align: center;
+        }
+
+        .page .nav {
+            position: fixed;
+            left: 50px;
+            top: 50%;
+            width: 150px;
+            height: auto;
+            margin-top: -123px;
+            font-family: 'Courier New';
+        }
+
+        .page .nav .nav-li {
+            width: 150px;
+            height: auto;
+            line-height: 40px;
+            text-align: center;
+            border-bottom: 1px solid #FFF;
+            background: #333;
+            color: #FFF;
+            font-size: 16px;
+        }
+
+        .page .nav .nav-li ul {
+            background: #666;
+            display: none;
+        }
+
+        .page .nav .nav-li:hover ul {
+            background: #666;
+            display: block;
+        }
+
+        .page .nav .nav-li ul li {
+            position: relative;
+            border-bottom: 1px dashed #FFF;
+        }
+
+        li .level3 {
+            position: absolute;
+            left: 150px;
+            top: 0px;
+            background: #999;
+            display: none;
+        }
+
+        li:hover .level3 {
+            display: block;
+        }
+
+        li .level3 .level3dom {
+            width: 150px;
+            height: 40px;
+            border-bottom: 1px dotted #FFF;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <h1 class="title">SideBar Test</h1>
+        <div class="nav">
+            <div class="nav-li">
+                慕课网教程1
+                <ul>
+                    <li>level1.1
+                        <div class="level3">
+                            <div class="level3dom">level1.1.1</div>
+                            <div class="level3dom">level1.1.1</div>
+                            <div class="level3dom">level1.1.1</div>
+                            <div class="level3dom">level1.1.1</div>
+                        </div>
+                    </li>
+                    <li>level1.1<div class="level3">
+                            <div class="level3dom">level1.1.2</div>
+                            <div class="level3dom">level1.1.2</div>
+                            <div class="level3dom">level1.1.2</div>
+                            <div class="level3dom">level1.1.2</div>
+                        </div>
+                    </li>
+                    <li>level1.1<div class="level3">
+                            <div class="level3dom">level1.1.3</div>
+                            <div class="level3dom">level1.1.3</div>
+                            <div class="level3dom">level1.1.3</div>
+                            <div class="level3dom">level1.1.3</div>
+                        </div>
+                    </li>
+                    <li>level1.1<div class="level3">
+                            <div class="level3dom">level1.1.4</div>
+                            <div class="level3dom">level1.1.4</div>
+                            <div class="level3dom">level1.1.4</div>
+                            <div class="level3dom">level1.1.4</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-li">慕课网教程2
+                <ul>
+                    <li>level1.2</li>
+                    <li>level1.2</li>
+                    <li>level1.2</li>
+                    <li>level1.2</li>
+                </ul>
+            </div>
+            <div class="nav-li">慕课网教程3
+                <ul>
+                    <li>level1.3</li>
+                    <li>level1.3</li>
+                    <li>level1.3</li>
+                    <li>level1.3</li>
+                </ul>
+            </div>
+            <div class="nav-li">慕课网教程4 <ul>
+                    <li>level1.4</li>
+                    <li>level1.4</li>
+                    <li>level1.4</li>
+                    <li>level1.4</li>
+                </ul>
+            </div>
+            <div class="nav-li">慕课网教程5 <ul>
+                    <li>level1.5</li>
+                    <li>level1.5</li>
+                    <li>level1.5</li>
+                    <li>level1.5</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
