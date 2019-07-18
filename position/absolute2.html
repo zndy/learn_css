@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        .page {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .header,
+        .footer {
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+
+        .header {
+            top: 0;
+            height: 48px;
+            background: red;
+        }
+
+        .footer {
+            bottom: 0;
+            height: 52px;
+            background: green;
+        }
+
+        .aside {
+            position: absolute;
+            top: 48px;
+            bottom: 52px;
+            left: 0;
+            width: 50px;
+            background: blue;
+        }
+
+        .content {
+            position: absolute;
+            top: 48px;
+            bottom: 52px;
+            left: 50px;
+            width: 100%;
+            background: yellow;
+            overflow: auto;
+        }
+
+        .text {
+            height: 3000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="header">header</div>
+        <div class="footer">footer</div>
+        <div class="aside">aside</div>
+        <div class="content">content
+            <div class="text">aaa</div>
+        </div>
+    </div>
+</body>
+
+</html>
