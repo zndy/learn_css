@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .div1 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            display: inline-block;
+        }
+
+        .div2 {
+            width: 100px;
+            height: 100px;
+            background: green;
+            margin-top: -20px;
+        }
+
+        .comment {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">div1</div>
+    <span>after div1</span>
+    <div class="div2">div2</div>
+    <span>after div2</span>
+    <div class="comment">
+        comment: <br> 
+        div2被div1覆盖是因为inline-block的层级大于block<br>
+        div1被div2的文字覆盖是因为inline和inline-block是同级的，后来的覆盖先来的<br>
+    </div>
+</body>
+
+</html>
