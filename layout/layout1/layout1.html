@@ -72,6 +72,45 @@
     <footer>
         johnny @ 2019
     </footer>
+
+    <div class="dialogWrapper">
+        <div class="mask"></div>
+        <div class="dialog">
+            <div class="title">Login</div>
+            <div class="body">
+                <form>
+                    <ul>
+                        <li>
+                            <label>用户名</label>
+                            <input type="text" name="username"/>
+                        </li>
+                        <li>
+                            <label>密码</label>
+                            <input type="password" name="password"/>
+                        </li>
+                        <li class="operateWrapper">
+                            <button id="cancelDialog">取消</button>
+                            <button class="primary">登陆</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 点击登陆按钮
+        document.querySelector('#login').addEventListener('click',function(){
+            document.querySelector('.dialogWrapper').classList.add('show');
+            e.preventDefault();
+        });
+
+        // 点击取消按钮
+        document.querySelector('#cancelDialog').addEventListener('click',function(){
+            document.querySelector('.dialogWrapper').classList.remove('show');
+            e.preventDefault();
+        });
+    </script>
 </body>
 
 </html>
